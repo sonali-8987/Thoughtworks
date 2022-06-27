@@ -1,0 +1,40 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		String str="a Partridge in a Pear Tree.";
+		String change="";
+		String num="";
+		for(int i=1;i<=12;i++)
+		{
+		    if(i==2){num = "two";change="Turtle Doves";}
+		    else if(i==3){num="three";change="French Hens";}
+		    else if(i==4){num="four";change="Calling Birds";}
+		    else if(i==5){num="five";change="Gold Rings";}
+		    else if(i==6){num="six";change="Geese-a-Laying";}
+		    else if(i==7){num="seven";change="Swans-a-Swimming";}
+		    else if(i==8){num="eight";change="Swans-a-Swimming";}
+		    else if(i==9){num="nine";change="Ladies Dancing";}
+		    else if(i==10){num="ten";change="Lords-a-Leaping";}
+		    else if(i==11){num="eleven";change="Pipers Piping";}
+		    else if(i==12){num="twelve";change="Drummers Drumming";}
+		    
+		    System.out.print("On the "+num+" day of Christmas my true love gave to me:");
+		    if(i!=1 && i==2){
+		        str=num+" "+change+", and "+str;
+		    }
+		    else if(i!=1){
+		        str = num+" "+change+", "+str;
+		    }
+		    System.out.print(str);
+		    System.out.println();
+		}
+	}
+}
